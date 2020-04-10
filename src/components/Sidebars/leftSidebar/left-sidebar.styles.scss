@@ -1,0 +1,29 @@
+.left-sidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: #FFFFFF;
+        border: 1px solid rgba(151, 151, 151, 0.4);
+        border-radius: 5px;
+        width: 25%;
+
+
+    .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: left;
+        line-height: 24px;
+        letter-spacing: 1px;
+        color: #212121;
+    }
+}
+
+@media(max-width:800px){
+    .left-sidebar{
+        display: none
+    }
+}

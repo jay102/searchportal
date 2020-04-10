@@ -1,0 +1,32 @@
+.tag-body{
+    padding: 5px 15px;
+    background: #E7E7E7;
+    border-radius: 13px;
+    margin: 0 18px 0 0;
+    height: 28px;
+
+    .text{
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.62);
+        }
+}
+
+.empty-tag{
+    padding: 5px 10px;
+    background: #D41E43;
+    border-radius: 13px;
+    height: 28px;
+
+    .text{
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+}

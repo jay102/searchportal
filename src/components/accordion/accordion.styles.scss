@@ -1,0 +1,46 @@
+.panel-title:after {
+    font-family: FontAwesome;
+    // content: "\f107";
+    content: "\f106";
+    float: right;
+    color: grey;
+  }
+  
+  .panel-title[aria-expanded="true"]:after {
+    content: "\f106";
+  }
+  .panel-title[aria-expanded="false"]:after {
+    content: "\f107";
+  }
+
+  .btn-link{
+    text-align: left;
+    font-family: Poppins-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  #accordion{
+    margin: 10px 0;
+    .card{
+        background: #FAFAFA;
+        // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 2px;
+
+        .card-body{
+            padding: 1.2rem 0;
+        }
+    }
+  }
+
+  @media(min-width:992px){
+      #accordion{
+          .card{
+              width: 273px;
+          }
+      }
+  }

@@ -1,0 +1,93 @@
+.by-date{
+    input{ margin: 0 8px}
+
+    label{
+        font-family: Poppins-Regular;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        padding: 5px;
+    } 
+}
+
+.by-location,
+.by-people,
+.by-document{
+    .form-check {
+        padding-left: 1.5rem;
+        .form-check-label {
+            font-family: Poppins-Regular;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 14px;
+            color: #000000;
+        }
+    }
+    .form-check-input{
+        margin-top: -6px;
+    }
+    label{
+        padding: 5px; 
+    }
+    .search-input{
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+        margin: 0 8px 10px 8px;
+        padding: 5px;
+        
+    }
+}
+
+.by-document{
+    .toggle-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .tag{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: #0062FF;
+        border-radius: 21px;
+        height: 25px;
+        width: 60px;
+        margin: 0 10px;
+        padding-right: 2px;
+        span{
+            margin-bottom: 2px;
+        }
+        p{
+            font-family: 'Red Hat Text';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin-top: 14px;
+            margin-left: 5px;
+        }
+    }
+}
+
+
+@media (min-width:992px){
+    .by-location,
+    .by-people,
+    .by-document{
+        input{
+            background: #FFFFFF;
+            border: 1px solid #DADADA;
+            border-radius: 5px;
+            width: 246px;
+            height: 28px;
+            
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.search-enterprise-data{
+    padding: 20px;
+    background: #0062FF;
+    border-radius: 5px;
+    margin: 20px 0;
+
+    .title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    }
+    .text{
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #F1F1F5;
+
+    }
+
+    .btn-group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+
+        button{
+            background: #FFFFFF;
+            border-radius: 5px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: #0062FF;
+            padding: 10px;
+        }
+    }
+
+}
+
+@media(min-width:992px){
+    .search-enterprise-data{
+        .btn-group{
+            button{
+                width: 121px;
+            }
+        }
+    }
+}

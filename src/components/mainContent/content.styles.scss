@@ -1,0 +1,65 @@
+.main-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+
+    .total-search-results{
+            font-family: Poppins-Regular;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.75px;
+            color: #535353;
+            text-align: start;
+    }
+    .recommended-for-you{
+            font-family: Poppins-Regular;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.75px;
+            color: #000000;
+            text-align: start;
+    }
+    .tag-group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .pagination{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 20px;
+
+       ul{
+           li{
+               margin: 0 6px;
+           }
+       }
+       .page-link{
+           border: none;
+           color: #979797;
+           font-size: 14px;
+       }
+       .page-item.active .page-link{
+                border-radius: 60%;
+                width: 28px;
+                height: 28px;
+                background-color: #D41E43;
+                border-color: #D41E43;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+       }
+    }
+}

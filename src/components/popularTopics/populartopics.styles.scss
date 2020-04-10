@@ -1,0 +1,42 @@
+.popular-topics{
+        padding: 20px;
+        background: #FFFFFF;
+        border: 1px solid rgba(151, 151, 151, 0.4);
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin: 0 0 20px 0;
+
+        .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.07em;
+        color: #212121;
+        }
+}
+
+.popular-topics-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: normal;
+    padding: 10px;
+    border: 1px solid #D5D5DC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 15px 0;
+
+p{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+    color: #2D2D2D;
+    margin: 5px;
+}
+}

@@ -1,0 +1,54 @@
+.text-size-modal{
+
+    .modal-title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        text-align: center;
+        width: 100%;
+    }
+    .subtitle{
+        font-family: Poppins-Regular;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+        text-align: center;
+
+    }
+
+    .list-group{
+        li{
+            font-family: 'Red Hat Text';
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .small{
+            
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+
+        }
+        .medium{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            color: #0062FF;
+        }
+        .large{
+          
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+        }
+    }
+}

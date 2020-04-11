@@ -1,12 +1,14 @@
 import React,{ useState} from 'react';
 import './styles.scss';
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import DateIcon from '../../assets/icons/date-range.svg';
+
+//import picker
+import RangePickerModal from '../Modals/DateRangepicker';
+
 
 const ByDate = () => {
-    const [date, setDate] = useState(new Date())
-
-const handleChange = date => setDate(date) 
+    const [visible, setVisibility] = useState(false);
+    const toggle = () => setVisibility(!visible)
     return (
         <div className="by-date">
         <div className="radio">
@@ -15,11 +17,11 @@ const handleChange = date => setDate(date)
         <div className="radio">
         <label><input type="radio" name="date" checked/>Custom Range</label>
         </div>
-        <DatePicker
-        selected={date}
-        onChange={handleChange}
-        
-      />
+        <div className="picker" onClick={toggle}>
+        <p>03/23/2020 - 03/31/2020</p>
+        <span><img src={DateIcon} alt="date icon"/></span>
+        </div>
+        <RangePickerModal visible={visible} toggle={toggle}/>
         </div>
     )
 }

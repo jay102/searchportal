@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './topbar.styles.scss';
 import Logo from '../../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
@@ -12,30 +12,41 @@ import FontSizechangerIcon from '../../assets/icons/textsize-changer-small.svg';
 //import components
 import SearchBox from '../inputBox/inputBox';
 
-const topBar = () => {
+//import Modal
+import FontSizeModal from '../Modals/textSizeModal/textSizeModal';
+import FilterModal from '../Modals/filterModal/filterModal';
+
+const TopBar = () => {
+    const [visible, setVisibility] = useState(false);
+    const [filterModal, setFilterModal] = useState(false);
+    const toggle = () => setVisibility(!visible)
+    const toggleFilterModal = () => setFilterModal(!filterModal)
     return (
         <div>
             <BrowserView>
             <div className="topbar">
             <Link to="/"><img src={Logo} alt="logo"/> </Link>
             <SearchBox className="results" placeholder="Health Grant"/>
-            <div className="letter-box">
+            <div className="letter-box" onClick={toggle}>
                <span className="smallest">A</span>
                <span className="smaller">A</span>
                <span className="small">A</span>
            </div>
            </div>
+            <FontSizeModal toggle={toggle} visible={visible}/>
             </BrowserView>
 
             <MobileView>
             <div className="mobile-topbar-ui">
             <div className="inner">
-            <img src={FilterIcon} alt="filter"/>
+            <img src={FilterIcon} alt="filter" onClick={toggleFilterModal}/>
             <img src={LogoSmallIcon} alt="logo-small"/>
-             <img src={FontSizechangerIcon} alt="fontsize changer"/>
+             <img src={FontSizechangerIcon} alt="fontsize changer" onClick={toggle}/>
             </div>   
             <SearchBox mobile className="results" placeholder="Health Grant"/> 
             </div> 
+            <FilterModal visible={filterModal} toggle={toggleFilterModal}/>
+            <FontSizeModal toggle={toggle} visible={visible}/>
             </MobileView>
 
         <div className="nav-cover">
@@ -62,4 +73,4 @@ const topBar = () => {
     )
 }
 
-export default topBar;
+export default TopBar;

@@ -29,3 +29,24 @@ const leftSideBar = () => {
 }
 
 export default leftSideBar;
+
+const Filter = () => {
+    return (
+        <div className="mobile-filter">
+        <Accordion title="By Date">
+        <Date/>
+       </Accordion>
+       <Accordion title="By Document Type">
+       <ByDocument/>
+       </Accordion>
+       <Accordion title="By Location">
+       <ByLocation/>
+       </Accordion>
+       <Accordion title="By People">
+       <ByPeople/>
+       </Accordion>
+       </div>
+    );
+}
+
+export { Filter}

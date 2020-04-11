@@ -76,6 +76,29 @@
     }
 }
 
+.picker{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #D5D5DC;
+    border-radius: 5px;
+    height: 28px;
+    width: 246px;
+    margin: 0 8px 10px 8px;
+    p{
+        font-family: Poppins-Regular;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: #92929D;
+        margin-top: 17px;
+    }
+}
 
 @media (min-width:992px){
     .by-location,

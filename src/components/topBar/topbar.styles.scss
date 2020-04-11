@@ -1,5 +1,5 @@
 .topbar{
-    padding: 20PX;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,6 +29,20 @@
             text-align: center;
             color: #000000;
             line-height: 21px;
+        }
+    }
+}
+
+.mobile-topbar-ui{
+    padding: 20px;
+    .inner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        img{
+            cursor: pointer;
         }
     }
 }

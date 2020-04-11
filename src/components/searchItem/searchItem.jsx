@@ -6,11 +6,15 @@ const searchItem = ({head, body, link, tag}) => {
         <div className="search-item">
             <div>
             <a href={link} className="search-result-header">{head}</a>
-            <span><Tag tag={tag}/></span>
+            <span className="tag-on-header"><Tag tag={tag}/></span>
             </div>
             
             <p className="search-result">{body}</p>
+            <div>
             <a href={link} className="web-link">{link}</a>
+            <span className="tag-on-link"><Tag tag={tag}/></span>
+            </div>
+            
         </div>
     )
 }

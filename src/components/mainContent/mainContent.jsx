@@ -4,6 +4,11 @@ import {RecommendedTags, EmptyTag } from '../../components/recommendedTags/recom
 import SearchItem from '../searchItem/searchItem';
 import Pagination from 'react-js-pagination';
 
+//import Components
+import SearchEnterpriseData from '../searchEnterpriseData/searchEnterpriseData';
+import SatisfiedSearchResults from '../satisfiedSearchResult/satisfiedSearchResult';
+import PopularTopics from '../popularTopics/popularTopics';
+
 const MainContent = () => {
     const [activePage, setActivePage ] = useState(1);
 
@@ -40,6 +45,9 @@ const MainContent = () => {
                   local authorities to improve health in local populations."
             link="http://www.gov.uk"
             tag="Link"/>
+            <div className="sidebar">
+            <PopularTopics withAccordion/>
+            </div>
             <SearchItem
             head="Grants & Funding | NIH"
             body="Find a Health Center; Query Data; View Fact Sheets; 
@@ -61,6 +69,9 @@ const MainContent = () => {
                   historical purposes and is no longer being ...  "
             link="www.cdc.gov/nccdphp/dch/community-health-funding/index.htm"
             tag="Link"/>
+             <div className="sidebar">
+             <SatisfiedSearchResults/>
+             </div>
             <SearchItem
             head="CDC - Community Health Funding - NCCDPHP: Comm..."
             body="Community Health Funding. Recommend on Facebook 
@@ -82,6 +93,10 @@ const MainContent = () => {
                 linkClass="page-link"
 			/>
             </div>
+            <div className="sidebar">
+            <SearchEnterpriseData/>
+            </div>
+           
         </div>
     )
 }

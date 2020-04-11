@@ -7,7 +7,7 @@
         margin: 0 0 20px 0;
 
         .title{
-        font-family: Poppins;
+        font-family: Poppins-Regular;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -41,7 +41,7 @@ p{
 }
 }
 
-@media(min-width:1024px){
+@media(max-width:1024px){
     .popular-topics-item{
         p{
             margin: 0;

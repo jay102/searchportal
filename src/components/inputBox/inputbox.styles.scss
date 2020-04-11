@@ -33,10 +33,14 @@
     padding: 5px;
     height: 60px;
     width: 100%;
+    font-family: Poppins;
     min-width: 300px;
     font-size: large;
 }
-
+.searchbtn{
+    background: #24356F;
+    border-radius: 4px;
+}
 @media(min-width:992px){
 
             .has-search{

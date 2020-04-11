@@ -4,7 +4,23 @@ import HowitWorksLogo from '../../assets/images/how-it-works.svg';
 import TrendingLogo from '../../assets/images/trending.svg';
 import ContributeLogo from '../../assets/images/contribute.svg';
 
-const popularTopics = () =>{
+//import Accordion
+import Accordion from '../accordion/accordion';
+
+const popularTopics = ({withAccordion}) => {
+
+    if(withAccordion){
+        return (
+            <Accordion className="popular-topic" title="Popular Topics">
+            <div className="popular-topics">
+            <Item text="How it Works" logo={HowitWorksLogo}/>
+            <Item text="Trending Searches" logo={TrendingLogo}/>
+            <Item text="Contribute" logo={ContributeLogo}/>
+        </div>
+           </Accordion>
+        );
+    }
+
     return (
         <div className="popular-topics">
             <h4 className="title">Popular Topics</h4>

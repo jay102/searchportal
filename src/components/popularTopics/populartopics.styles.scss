@@ -40,3 +40,11 @@ p{
     margin: 5px;
 }
 }
+
+@media(min-width:1024px){
+    .popular-topics-item{
+        p{
+            margin: 0;
+        }
+    }
+}

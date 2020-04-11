@@ -1,5 +1,4 @@
 .main-content{
-    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -33,11 +32,12 @@
         align-items: center;
     }
 
-    .pagination{
+    div.pagination{
        display: flex;
        align-items: center;
        justify-content: center;
        margin-top: 20px;
+       padding: 20px;
 
        ul{
            li{
@@ -61,5 +61,29 @@
                 align-items: center;
                 font-size: 13px;
        }
+    }
+}
+
+@media(min-width:992px){
+    .main-content{
+        width: 50% !important;
+    }  
+}
+@media(max-width:500px){
+    .main-content{
+        width: 100%;
+    }
+    .main-content div.pagination ul li {
+        margin: 0;
+    }
+}
+@media(min-width:600px){
+    .main-content{
+        width: 60%;
+    }
+}
+@media(min-width:800px){
+    .main-content{
+        width: 60%;
     }
 }

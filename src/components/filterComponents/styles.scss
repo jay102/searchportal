@@ -46,7 +46,7 @@
     .toggle-group{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     .tag{
@@ -58,7 +58,7 @@
         border-radius: 21px;
         height: 25px;
         width: 60px;
-        margin: 0 10px;
+        margin: 5px 10px;
         padding-right: 2px;
         span{
             margin-bottom: 2px;
@@ -86,6 +86,17 @@
             border: 1px solid #DADADA;
             border-radius: 5px;
             width: 246px;
+            height: 28px;
+            
+        }
+    }
+}
+@media (min-width:1024px){
+    .by-location,
+    .by-people,
+    .by-document{
+        input{
+            width: auto;
             height: 28px;
             
         }

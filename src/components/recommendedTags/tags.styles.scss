@@ -20,6 +20,7 @@
     background: #D41E43;
     border-radius: 13px;
     height: 28px;
+    
 
     .text{
         font-family: 'Red Hat Text';
@@ -28,6 +29,13 @@
         font-size: 16px;
         line-height: 16px;
         color: #FFFFFF;
+    }
+}
+
+@media(min-width:320px){
+    .tag-body,
+    .empty-tag{
+        margin-top: 10px;
     }
 }
 
